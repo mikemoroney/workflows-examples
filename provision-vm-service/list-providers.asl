@@ -4,7 +4,7 @@
   "States": {
     "ListProviders": {
       "Type": "Task",
-      "Resource": "docker://docker.io/mikem834/iae/list-providers:v0.2",
+      "Resource": "docker://docker.io/mikem834/list-providers:latest",
       "End": true,
       "Credentials": {
         "api_user.$": "$.api_user",
