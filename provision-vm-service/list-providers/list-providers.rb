@@ -19,7 +19,7 @@ api = ManageIQ::API::Client.new(
   :url      => url,
   :user     => user,
   :password => password,
-  :ssl      => {:verify => verify_ssl}
+  :ssl      => "false"
 )
 
 response = api.providers
