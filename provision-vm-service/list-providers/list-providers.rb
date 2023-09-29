@@ -11,7 +11,7 @@ password = "smartvm"
 
 url           = ENV.fetch("API_URL", "http://localhost:3000")
 provider_type = ENV.fetch("PROVIDER_TYPE", nil)
-verify_ssl    = ENV.fetch("VERIFY_SSL", "true") == "true"
+verify_ssl    = ENV.fetch("VERIFY_SSL", "false") == "false"
 
 api = ManageIQ::API::Client.new(
   :url      => url,
