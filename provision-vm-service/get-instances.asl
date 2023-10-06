@@ -1,10 +1,10 @@
 {
-  "Comment": "List providers.",
-  "StartAt": "ListProviders",
+  "Comment": "Get Instances",
+  "StartAt": "GetInstances",
   "States": {
-    "ListProviders": {
+    "GetInstances": {
       "Type": "Task",
-      "Resource": "docker://docker.io/mikem834/list-providers:latest",
+      "Resource": "docker://docker.io/mikem834/get-instances:latest",
       "End": true,
       "Credentials": {
         "api_user.$": "$.api_user",
