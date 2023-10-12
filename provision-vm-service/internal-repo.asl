@@ -1,6 +1,6 @@
 {
-  "Comment": "Get Instances",
-  "StartAt": "GetInstances",
+  "Comment": "Internal Repo",
+  "StartAt": "InternalRepo",
   "States": {
     "GetInstances": {
       "Type": "Task",
