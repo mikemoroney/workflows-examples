@@ -2,7 +2,7 @@
   "Comment": "Internal Repo",
   "StartAt": "InternalRepo",
   "States": {
-    "GetInstances": {
+    "InternalRepo": {
       "Type": "Task",
       "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/internal-repo:latest",
       "End": true,
