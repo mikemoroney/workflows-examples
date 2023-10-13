@@ -12,7 +12,8 @@
       },
       "Parameters": {
         "PROVIDER_TYPE.$": "ManageIQ::Providers::Vmware::InfraManager",
-        "VERIFY_SSL": false
+        "VERIFY_SSL": false,
+        "API_URL.$": "$.dialog.api_dialog"
       }
     }
   }
