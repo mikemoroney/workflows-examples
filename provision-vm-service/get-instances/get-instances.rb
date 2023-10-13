@@ -9,8 +9,8 @@ require "manageiq-api-client"
 user = "admin"
 password = "smartvm" 
 
-#url           = ENV.fetch("API_URL", "https://9.37.205.139")
-url = "https://9.37.205.139"
+url = ENV.fetch("API_URL")
+#url = "https://9.37.205.139"
 provider_type = ENV.fetch("PROVIDER_TYPE", nil)
 #verify_ssl    = ENV.fetch("VERIFY_SSL", "true") == "true"
 #verify_ssl = "false"
