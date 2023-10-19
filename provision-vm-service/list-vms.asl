@@ -1,11 +1,11 @@
 {
-  "Comment": "Tag Selected VMVM",
+  "Comment": "Tag Selected VM",
   "StartAt": "ListVMs",
   "States": {
     "ListVMs": {
       "Type": "Task",
       "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/list-vms:latest",
-      "End": false,
+      "Next": "TagVM",
       "Credentials": {
         "api_user.$": "$.api_user",
         "api_password.$": "$.api_password"
