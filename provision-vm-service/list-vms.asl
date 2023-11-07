@@ -26,7 +26,7 @@
       },
       "Parameters": {
         "VERIFY_SSL": false,
-        "API_URL.$": "$.dialog.api_dialog"
+        "API_URL.$": "$.dialog.api_dialog",
         "VM_NAME.$": "$.dialog.vm_name"
       }
     }
