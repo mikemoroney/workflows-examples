@@ -7,7 +7,8 @@ secrets = JSON.load(File.read(ENV.fetch("_CREDENTIALS")))
 user     = secrets.fetch("api_user", "adminxxx")
 password = secrets.fetch("api_password", "smartvmxxx")
 
-url = "https://9.37.205.139"
+#url = "https://9.37.205.139"
+url        = ENV.fetch("API_URL")
 
 api = ManageIQ::API::Client.new(
   :url      => url,
