@@ -6,11 +6,12 @@ secrets = JSON.load(File.read(ENV.fetch("_CREDENTIALS")))
 
 user     = secrets.fetch("api_user", "adminxxx")
 password = secrets.fetch("api_password", "smartvmxxx")
+url = secrets.fetch("url", "https://9.37.205.111")
 #user = "admin"
 #password = "smartvm" 
 
 #url           = ENV.fetch("API_URL", "https://9.37.205.139")
-url = "https://9.37.205.139"
+#url = "https://9.37.205.139"
 provider_type = ENV.fetch("PROVIDER_TYPE", nil)
 #verify_ssl    = ENV.fetch("VERIFY_SSL", "true") == "true"
 #verify_ssl = "false"
