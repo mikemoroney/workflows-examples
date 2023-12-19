@@ -4,7 +4,7 @@
   "States": {
     "CredentialTest": {
       "Type": "Task",
-      "Resource": "docker://docker.io/mikem834/credential-test:latest",
+      "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/credential-test:latest",
       "End": true,
       "Credentials": {
         "api_user.$": "$.api_user",
