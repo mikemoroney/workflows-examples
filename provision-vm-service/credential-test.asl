@@ -8,7 +8,8 @@
       "End": true,
       "Credentials": {
         "api_user.$": "$.api_user",
-        "api_password.$": "$.api_password"
+        "api_password.$": "$.api_password",
+        "url.$": "$.url"
       },
       "Parameters": {
         "PROVIDER_TYPE.$": "ManageIQ::Providers::Vmware::InfraManager",
