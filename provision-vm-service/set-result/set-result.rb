@@ -5,4 +5,4 @@ result = {
   "token" => "abc123"
 }
 
-#puts result.to_json
+puts result.to_json
