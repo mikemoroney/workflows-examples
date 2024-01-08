@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'json'
-
+secrets = JSON.load(File.read(ENV.fetch("_CREDENTIALS")))
 result = {
   "token" => "abc123"
 }
