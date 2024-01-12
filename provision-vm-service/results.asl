@@ -13,6 +13,7 @@
       "Credentials": {
         "token.$": "$.token"
       }
+      "End":true
     }
   }
 }
