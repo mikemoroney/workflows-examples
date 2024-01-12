@@ -12,8 +12,8 @@
       "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/get-result:latest",
       "Credentials": {
         "token.$": "$.token"
-      }
-      "End":true
+      },
+      "End": true
     }
   }
 }
