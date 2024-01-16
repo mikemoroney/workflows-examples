@@ -8,3 +8,4 @@ result = {
 
 puts result.to_json
 sleep(60)
+return result.to_json
