@@ -3,7 +3,7 @@ require "json"
 require "manageiq-api-client"
 
 secrets = JSON.load(File.read(ENV.fetch("_CREDENTIALS")))
-token     = secrets.fetch("token")
+mytoken     = secrets.fetch("token")
 
-puts token
+puts mytoken
 sleep(60)
