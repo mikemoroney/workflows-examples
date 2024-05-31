@@ -50,7 +50,7 @@
     "Provision": {
       "Type": "Task",
       "Resource": "manageiq://provision_execute",
-      "Next": "SendEmail"
+      "Next": "Finished"
     },
     "SendEmail": {
       "Type": "Task",
