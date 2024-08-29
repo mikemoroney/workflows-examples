@@ -14,7 +14,7 @@
         },
         "Provision": {
             "Type": "Task",
-            "Resource": "manageiq://provision-execute",
+            "Resource": "manageiq://provision_execute",
             "Next": "Finished"
         },
         "Finished": { 
