@@ -2,7 +2,7 @@
     "Comment": "Provision VM adding 3 CPUs to the request ",
     "StartAt": "DetermineSize",
     "States": { 
-        "DetermineSize:" { 
+        "DetermineSize": { 
             "Type": "Pass",
             "Variable": "$.cpu",
             "newcpu.$": "States.MathAdd($.cpu,3)",
