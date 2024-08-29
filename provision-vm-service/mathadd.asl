@@ -5,7 +5,7 @@
         "DetermineSize:" { 
             "Type": "Pass",
             "Variable": "$.cpu",
-            "newcpu.$": "3",
+            "newcpu.$": "States.MathAdd($.cpu,3)",
             "Result": { 
                 "vm_memory": "2048",
                 "number_of_sockets": "$.newcpu"
