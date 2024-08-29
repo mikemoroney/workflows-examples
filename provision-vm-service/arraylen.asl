@@ -5,16 +5,18 @@
     "States": { 
         "DetermineSize": { 
             "Type": "Pass",
-            "Variable": "$.input_array",
-            "len_input.$": "States.ArrayLength($.input_array)"
+            "Variable": "$.input_string",
+            "Variable": "$.splitter",
+            "input_array.$": "States.StringSplit($.input_string, $.splitter)",
+            "len_input.$": "States.ArrayLength($.input_array)",
             "Result": { 
                 "answer.$": "$.len_input"
-            }
+            },
             "Next": "Provision"
         },
         "Provision": {
             "Type": "Task",
-            "Resource": "manageiq://email,
+            "Resource": "manageiq://email",
             "Parameters": { 
               "To": "mikemoro@ie.ibm.com",
               "Subject": "workflow output",
