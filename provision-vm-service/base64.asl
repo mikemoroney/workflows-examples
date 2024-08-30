@@ -7,12 +7,12 @@
         "Choices": [
           {
           "Variable": "States.Base64Encode($.input_string)",
-          "StringEquals": "xxxxxxxxx",
+          "StringEquals": "aGVsbG8gd29ybGQK",
           "Next": "Winner"
           },
           {
           "Variable": "States.Base64Encode($.input_string)",
-          "StringEquals": "yyyyyyyyy",
+          "StringEquals": "SGVsbG8gV29ybGQK",
           "Next": "Winner"
           }
         ],
