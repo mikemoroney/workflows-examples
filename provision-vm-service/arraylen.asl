@@ -7,8 +7,8 @@
             "Type": "Pass",
             "Variable": "$.input_string",
             "Variable": "$.splitter",
-            "input_array.$": "States.StringSplit($.input_string, $.splitter)",
-            "len_input.$": "States.ArrayLength($.input_array)",
+            "input_array.$": "States.StringSplitFail($.input_string, $.splitter)",
+            "len_input.$": "States.ArrayLengthFail($.input_array)",
             "Result": { 
                 "answer.$": "$.len_input"
             },
