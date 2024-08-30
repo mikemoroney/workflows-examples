@@ -17,12 +17,12 @@
           }
         ],
         "Default": "Loser"
-    },
-    "Winner": { 
-      Type : Succeed
-    },
-  "Loser": { 
-    Type : Fail
-  }
+      },
+      "Winner": { 
+        "Type" : "Succeed"
+      },
+      "Loser": { 
+        "Type" : "Fail"
+      }
   }
   }
