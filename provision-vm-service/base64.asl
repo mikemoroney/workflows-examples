@@ -8,21 +8,22 @@
           {
           "Variable": "States.Base64Encode($.input_string)",
           "StringEquals": "aGVsbG8gd29ybGQK",
-          "Next": "Winner"
+          "Next": "SuccessState"
           },
           {
           "Variable": "States.Base64Encode($.input_string)",
           "StringEquals": "SGVsbG8gV29ybGQK",
-          "Next": "Winner"
+          "Next": "SuccessState"
           }
         ],
-        "Default": "Loser"
+        "Default": "FailState"
       },
-      "Winner": { 
+      "SuccessState": { 
         "Type" : "Succeed"
       },
-      "Loser": { 
-        "Type" : "Fail"
+      "FailState": { 
+        "Type" : "Fail",
+        "Error": "xxxxxx input_string is not what we expected xxxxxxx"
       }
   }
   }
