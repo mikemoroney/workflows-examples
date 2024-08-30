@@ -2,16 +2,23 @@
   "Comment": "Tests that the input equals hello world or Hello World",
   "StartAt": "CheckInput",
   "States": {
+      "EncodeInput" : {
+        "Type": "Pass",
+        "Variable": "$.input_string",
+        "Result": { 
+            "encoded.$" : "States.Base64Encode($.input_string)"
+        }
+      },
       "CheckInput": {
         "Type": "Choice",
         "Choices": [
           {
-          "Variable": "States.Base64Encode($.input_string)",
+          "Variable": "$.encoded",
           "StringEquals": "aGVsbG8gd29ybGQK",
           "Next": "SuccessState"
           },
           {
-          "Variable": "States.Base64Encode($.input_string)",
+          "Variable": "$.encoded",
           "StringEquals": "SGVsbG8gV29ybGQK",
           "Next": "SuccessState"
           }
