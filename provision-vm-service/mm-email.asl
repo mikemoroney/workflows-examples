@@ -1,3 +1,4 @@
+{ 
 "Comment": "send an email",
 "StartAt": "SendEmail",
 "States": { 
