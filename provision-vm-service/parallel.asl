@@ -11,7 +11,7 @@
           "States": {
             "Add": {
               "Type": "Task",
-              "Resource": "podman://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/dummy:latest",
+              "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/dummy:latest",
               "End": true
             }
           }
@@ -21,7 +21,7 @@
           "States": {
             "Subtract": {
               "Type": "Task",
-              "Resource": "podman://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/dummy:latest",
+              "Resource": "docker://docker-na.artifactory.swg-devops.com/hyc-cp4mcm-team-scratch-docker-local/aiops-backup-restore/dummy:latest",
               "End": true
             }
           }
