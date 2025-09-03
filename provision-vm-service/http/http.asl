@@ -10,7 +10,7 @@
         "Url": "http://localhost:3000/api/auth",
         "Headers": {
           "ContentType": "application/json",
-          "Authorization.$": "States.Format('Basic {}', States.Base64Encode(States.Format('{}:{}', $$.Credentials.username, $$.Credentials.password)))"
+          "Authorization.$": "States.Format('Basic {}', States.Base64Encode(States.Format('{}:{}', admin, smartvm))"
         },
         "Options": {"Encoding": "JSON"}
       },
