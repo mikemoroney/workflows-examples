@@ -7,7 +7,8 @@
         "Variable": "$.input_string",
         "Result": { 
             "encoded.$" : "States.Base64Encode($.input_string)"
-        }
+        },
+        "Next":"CheckInput"
       },
       "CheckInput": {
         "Type": "Choice",
