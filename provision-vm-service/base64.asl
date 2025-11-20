@@ -6,7 +6,7 @@
         "Type": "Pass",
         "Variable": "$.input_string",
         "Result": { 
-            "encoded.$" : "States.Base64Encode($.input_string)"
+            "encoded.$" : "States.Base64EncodeXXXX($.input_string)"
         },
         "Next":"CheckInput"
       },
