@@ -4,16 +4,14 @@
   "States": {
     "GetIncident": {
       "Type": "Task",
-      "Resource": "servicenow://incident/get_incident",
+      "Resource": "servicenow://incident/query_incidents",
       "Credentials": {
         "username.$": "$$.Credentials.username",
         "password.$": "$$.Credentials.password",
-        "instance_id.$": "$$.Credentials.instance_id",
-        "sys_id.$": "$$.Credentials.sys_id"
+        "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
-        "instance_id.$": "$.instance_id",
-        "sys_id.$": "$.sys_id"
+        "instance_id.$": "$.instance_id"
       },
       "ResultPath": "$.incident",
       "End": true
