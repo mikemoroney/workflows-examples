@@ -10,7 +10,7 @@
         "password.$": "$$.Credentials.password"
       },
       "Parameters": {
-        "instance_id.$": "$.instance_id"
+        "instance_id.$": "$.dialog.instance_id"
       },
       "ResultPath": "$.incident",
       "End": true
