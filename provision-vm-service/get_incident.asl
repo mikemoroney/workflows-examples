@@ -10,7 +10,7 @@
         "password.$": "$$.Credentials.password"
       },
       "Parameters": {
-        "instance_id": "dev397902"
+        "instance_id.$": "$$.Execution.Input.dialog.instance_id"
       },
       "ResultPath": "$.incident",
       "End": true
