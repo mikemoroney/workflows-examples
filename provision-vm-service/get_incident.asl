@@ -1,17 +1,16 @@
 {
-  "Comment": "Retrieve a single ServiceNow incident by sys_id",
-  "StartAt": "GetIncident",
+  "Comment": "Retrieve a number of ServiceNow incidents",
+  "StartAt": "GetIncidents",
   "States": {
-    "GetIncident": {
+    "GetIncidents": {
       "Type": "Task",
       "Resource": "servicenow://incident/query_incidents",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password",
-        "instance_id.$": "$$.Credentials.instance_id"
+        "password.$": "$$.Credentials.password"
       },
       "Parameters": {
-        "instance_id.$": "$.instance_id"
+        "instance_id": "dev388519"
       },
       "ResultPath": "$.incident",
       "End": true
