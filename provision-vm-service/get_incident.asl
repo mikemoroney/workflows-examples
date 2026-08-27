@@ -12,7 +12,7 @@
       "Parameters": {
         "instance_id.$": "$.dialog.instance_id"
       },
-      "ResultPath": "$.dialog.incident",
+      "ResultPath": "$.incident",
       "End": true
     }
   }
