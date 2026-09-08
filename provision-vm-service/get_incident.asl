@@ -7,7 +7,8 @@
       "Resource": "servicenow://incident/query_incidents",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+ "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": { 
                 "instance_id.$": "$$.Credentials.instance_id"
