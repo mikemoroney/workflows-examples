@@ -7,7 +7,8 @@
       "Resource": "servicenow://cmdb/get_ci_classes",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+       "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
         "instance_id.$": "$$.Credentials.instance_id",
@@ -21,7 +22,8 @@
       "Resource": "servicenow://cmdb/query_cis",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+ "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
         "instance_id.$": "$$.Credentials.instance_id",
@@ -38,7 +40,8 @@
       "Resource": "servicenow://cmdb/create_ci",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+ "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
         "instance_id.$": "$.instance_id",
@@ -56,7 +59,8 @@
       "Resource": "servicenow://cmdb/update_ci",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+ "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
         "instance_id.$": "$$.Credentials.instance_id",
@@ -73,7 +77,8 @@
       "Resource": "servicenow://cmdb/delete_ci",
       "Credentials": {
         "username.$": "$$.Credentials.username",
-        "password.$": "$$.Credentials.password"
+        "password.$": "$$.Credentials.password",
+ "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
         "instance_id.$": "$$.Credentials.instance_id",
