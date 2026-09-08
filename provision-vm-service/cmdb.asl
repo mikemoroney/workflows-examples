@@ -44,7 +44,7 @@
  "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
-        "instance_id.$": "$.instance_id",
+        "instance_id.$": "$$.Credentials.instance_id",
         "table": "cmdb_ci_server",
         "name": "test-server-workflow",
         "ip_address": "192.168.100.50",
