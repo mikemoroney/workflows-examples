@@ -65,7 +65,7 @@
       "instance_id.$": "$$.Credentials.instance_id"
       },
       "Parameters": {
-        "instance_id.$": "$.Credentials$.instance_id",
+        "instance_id.$": "$$.Credentials.instance_id",
         "table_name": "incident",
         "data": {
           "short_description": "Test incident created by workflow",
