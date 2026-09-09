@@ -31,7 +31,7 @@
       },
       "ResultPath": "$.catalog_items",
       "Next": "GetCatalogItem"
-    }
+    },
     "GetCatalogItem": {
       "Type": "Task",
       "Resource": "servicenow://service_catalog/get_item",
