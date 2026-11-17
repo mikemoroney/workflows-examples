@@ -17,7 +17,7 @@
           "src_configuration_script_id.$": "$.dialog.dialog_terraform_template_id",
           "src_ems_type": "embedded_terraform",
           "verbosity": [0, "Normal"],
-          "log_output": ["on_error", "On Error"]
+          "log_output": ["on_error", "On Error"],
           "dialog": {
             "vm_name.$": "$.dialog.dialog_instance_name"
           }
