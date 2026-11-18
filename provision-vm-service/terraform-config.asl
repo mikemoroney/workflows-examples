@@ -18,7 +18,7 @@
           "src_ems_type": "embedded_terraform",
           "verbosity": [0, "Normal"],
           "log_output": ["on_error", "On Error"],
-          "credential_id": [155, "aws"],
+          "credential_id": [155, "aws"]
         }
       },
       "Next": "PostProvision"
